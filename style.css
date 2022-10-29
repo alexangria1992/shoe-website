@@ -56,3 +56,132 @@ body {
 .navbar label {
     display: none;
 }
+
+/* MAIN SECTION */
+
+#main {
+    background-color: purple;
+    width: 100vw;
+    height: 490px;
+    display: flex;
+    /* background-color: rgb(161, 0, 35); */
+}
+
+.container-1 {
+    width: 95%;
+    height: 100%;
+    /* background-color: rgb(161,0,35); */
+    display: flex;
+    background-color: yellow;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.background-img {
+    /* display: none; */
+    width: 750px;
+    z-index: 1;
+    position: absolute;
+}
+
+.foreground-img {
+    width: 800px;
+    z-index: 2;
+    position: absolute;
+}
+
+.container-2 {
+    background-color: rgb(0, 204, 255);
+    width: 5%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: rgb(161, 0, 35)); */
+}
+
+.container-2 a {
+    text-transform: uppercase;
+    text-orientation: mixed;
+    writing-mode: vertical-rl;
+    text-decoration: none;
+    color: #ddd;
+    font-size: 0.8rem;
+}
+
+.container-2 span {
+    margin: 40px 40px;
+    background-color: black;
+}
+
+/* LOW SECTION */
+#low-end {
+    padding: 10px;
+    background-color: mediumvioletred;
+    width: 100vw;
+    overflow: hidden;
+    /* background-color: rgb(161, 0, 35)); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+}
+
+.left-case {
+    background-color: rgb(74, 0, 109);
+    width: 350px;
+    /* background: rgb(182,1,41); */
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    box-shadow: 4px 3px 4px 1px rgb(63, 8, 25);
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.left-case img {
+    width: 100px;
+}
+
+.left-case div {
+    /* background-color: blue; */
+    width: 2px;
+    background-color: #fff;
+    height: 40px;
+}
+
+.left-case:hover {
+    background-color: rgb(233, 14, 62);
+}
+
+.right-case {
+    background-color: rgb(74, 0, 109);
+    width: 350px;
+    /* background: rgb(182,1,41); */
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    box-shadow: 4px 3px 4px 1px rgb(63, 8, 25);
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.right-case img {
+    width: 100px;
+}
+
+.right-case div {
+    width: 2px;
+    background-color: #fff;
+    height: 40px;
+}
+
+.right-case:hover {
+    background-color: rgb(233, 14, 62);
+}
