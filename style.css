@@ -16,8 +16,8 @@ body {
 
 .navbar {
     display: flex;
-    background-color: green;
-    /* background-color: rgb(161, 0, 35); */
+    /* background-color: green; */
+    background-color: rgb(161, 0, 35);
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
@@ -39,7 +39,7 @@ body {
 }
 
 .list {
-    background-color: blue;
+    /* background-color: blue; */
     display: flex;
     gap: 100px;
     list-style: none;
@@ -60,19 +60,19 @@ body {
 /* MAIN SECTION */
 
 #main {
-    background-color: purple;
+    /* background-color: purple; */
     width: 100vw;
     height: 490px;
     display: flex;
-    /* background-color: rgb(161, 0, 35); */
+    background-color: rgb(161, 0, 35);
 }
 
 .container-1 {
     width: 95%;
     height: 100%;
-    /* background-color: rgb(161,0,35); */
+    background-color: rgb(161, 0, 35);
     display: flex;
-    background-color: yellow;
+    /* background-color: yellow; */
     justify-content: center;
     align-items: center;
     position: relative;
@@ -92,14 +92,14 @@ body {
 }
 
 .container-2 {
-    background-color: rgb(0, 204, 255);
+    /* background-color: rgb(0, 204, 255); */
     width: 5%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    /* background-color: rgb(161, 0, 35)); */
+    background-color: rgb(161, 0, 35);
 }
 
 .container-2 a {
@@ -119,10 +119,10 @@ body {
 /* LOW SECTION */
 #low-end {
     padding: 10px;
-    background-color: mediumvioletred;
+    /* background-color: mediumvioletred; */
     width: 100vw;
     overflow: hidden;
-    /* background-color: rgb(161, 0, 35)); */
+    background-color: rgb(161, 0, 35);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -130,9 +130,9 @@ body {
 }
 
 .left-case {
-    background-color: rgb(74, 0, 109);
+    /* background-color: rgb(74, 0, 109); */
     width: 350px;
-    /* background: rgb(182,1,41); */
+    background: rgb(182, 1, 41);
     height: 70px;
     display: flex;
     align-items: center;
@@ -159,9 +159,9 @@ body {
 }
 
 .right-case {
-    background-color: rgb(74, 0, 109);
+    /* background-color: rgb(74, 0, 109); */
     width: 350px;
-    /* background: rgb(182,1,41); */
+    background: rgb(182, 1, 41);
     height: 70px;
     display: flex;
     align-items: center;
@@ -184,4 +184,70 @@ body {
 
 .right-case:hover {
     background-color: rgb(233, 14, 62);
+}
+
+/*  RESPONSIVE */
+
+@media screen and (max-width: 650px) {
+    body {
+        width: 100%;
+    }
+
+    .menu {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .list {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        gap: 20px;
+    }
+
+    .navbar label {
+        display: inline-flex;
+        cursor: pointer;
+    }
+    #toggle:checked ~ .menu {
+        max-height: 100%;
+    }
+
+    .navbar {
+        padding: 0;
+    }
+    .logo {
+        margin-left: 0px;
+    }
+
+    #main {
+        display: block;
+        width: 100%;
+    }
+
+    .container-1 {
+        /* background-color: black; */
+        width: 100%;
+    }
+    .container-2 {
+        display: none;
+    }
+
+    .background-img {
+        width: 450px;
+    }
+    .foreground-img {
+        width: 450px;
+    }
+
+    #low-end {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+        overflow: hidden;
+    }
 }
